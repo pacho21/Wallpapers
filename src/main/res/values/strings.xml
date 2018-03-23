@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WallpapersApp</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="btn_upload">Upload Img</string>
+    <string name="btn_help">Help</string>
+</resources>
