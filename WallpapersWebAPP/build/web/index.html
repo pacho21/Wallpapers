@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>P&P Design - Wallpapers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <!--Bootsrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel='stylesheet' href='css/dr.css'>
+        <script src="js/drjs.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src='js/fileinput.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="css/fileinput.min.css">         
+    </head>
+    <body>
+        <div id="topHead" class="jumbotron text-center">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="cItems" class="carousel-inner">
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- End of jumbotron-->
+        <div class="container">
+            <h2>Submit your wallpapers</h2>
+            <p>You have the chance to upload your favorite wallpapers here! All you have to do it's insert the URL of your picture and send it to us. This will be stored in the database and will
+                apear in our aplication aswell. Note that the picture must be a valid resolution for mobile phones.</p>
+            <div id="good" class="form-row">
+                <div id="good-content" class="col sm-10 alert alert-success">
+
+                </div>
+            </div>
+            <div id="bad" class="form-row">
+                <div id="bad-content" class="col sm-10 alert alert-danger">
+
+                </div>
+            </div>
+            <form id="subImg" autocomplete="off">
+                <div class="form-row">
+                    <div class="col-sm-10">
+                        <label class="sr-only" for="inlineFormInput">Link</label>
+                        <input id="linkToImg" type="url" required class="form-control" id="inlineFormInput" placeholder="http://imgur.com/img.jpg">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10 my-2">
+                        <button type="submit" form="subImg" class="btn btn-primary float-right">Send image</button>
+                    </div>
+                </div>
+            </form>   
+            <form id="upImg" autocomplete="off">
+                <div class="form-row">
+                    <div class="col-sm-10">
+                        <label for="lblImg">Choose your image</label>
+                        <input id="inImg" required type="file" class="file" data-show-upload="false" data-show-caption="true" name="inputImg">
+                        <small id="fileHelp" class="form-text text-muted">Upload your image.</small>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10 my-2">
+                        <button type="submit" id="upload" form="upImg" class="btn btn-primary float-right">Upload image</button>
+                    </div>
+                </div>
+            </form>  
+        </div>
+        <div class="modal"><!-- Place at bottom of page --></div>
+    </body>
+</html>

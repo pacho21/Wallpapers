@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Context>
+<Context antiJARLocking="true" path="/Wallpapers">
+    <Resource name="jdbc/MysqlDB" auth="Container"
+              type="javax.sql.DataSource" username="root" password="pacho"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://35.189.77.168:3306/wallpapers"
+              maxActive="100" maxIdle="5"/>
+</Context>

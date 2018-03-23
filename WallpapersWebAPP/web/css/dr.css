@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-feb-2018, 12:48:17
+    Author     : Pacho
+*/
+
+img{
+    margin-left:2px;
+}
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+        url('http://i.stack.imgur.com/FhHRx.gif') 
+        50% 50% 
+        no-repeat;
+}
+body.loading {
+    overflow: hidden;   
+}
+#topHead{
+    background-image: url('../img/blue.jpg');
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+@media screen and (max-width: 600px){
+    img {
+        width: auto;
+        height: 250px;
+        max-height: 250px;
+    }
+    .support{
+        display:none;
+    }
+    .wideSc{
+        display:none;
+    }
+    #good{
+        display:none;
+    }
+    #bad{
+        display:none;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1010px){
+    #good{
+        display:none;
+    }
+    #bad{
+        display:none;
+    }
+    img {
+        width: auto;
+        height: 300px;
+        max-height: 300px;
+    }
+    .support{
+        display:inline-block;
+    }
+    .wideSc{
+        display:none;
+    }
+}
+
+
+@media screen and (min-width: 1010px){
+    img {
+        width: auto;
+        height: 300px;
+        max-height: 325px;
+    }
+    .support{
+        display:inline-block;
+    }
+    .wideSc{
+        display:inline-block;
+    }
+    #topHead{
+        margin-top: 1%!important;
+        margin-right: 2%!important;
+        margin-left: 2%!important;
+    }
+    #good{
+        display:none;
+    }
+    #bad{
+        display:none;
+    }
+}
